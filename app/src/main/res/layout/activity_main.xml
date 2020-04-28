@@ -20,7 +20,7 @@
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:title="App title">
+            app:title="Projeto TI94-Tarde">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toobarId"
@@ -39,7 +39,7 @@
         android:layout_margin="16dp"
         app:layout_anchor="@id/AppBar"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email"/>
+        app:srcCompat="@android:drawable/ic_btn_speak_now"/>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

@@ -47,28 +47,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
         Intent i;
 
-        switch (v.getId()) {
+        switch (view.getId()) {
             case R.id.bancoId:
-                i = new Intent(this, Bancos_Activity.class);
+                i = new Intent(getApplicationContext(), Bancos_Activity.class);
                 startActivity(i);
                 break;
             case R.id.ideiasId:
-                i = new Intent(this, Ideias_Activity.class);
+                i = new Intent(getApplicationContext(), Ideias_Activity.class);
                 startActivity(i);
                 break;
             case R.id.adicionarId:
-                i = new Intent(this, Adicionar_Activity.class);
+                i = new Intent(getApplicationContext(), Adicionar_Activity.class);
                 startActivity(i);
                 break;
             case R.id.linksId:
-                i = new Intent(this, Links_Activity.class);
+                i = new Intent(getApplicationContext(), Links_Activity.class);
                 startActivity(i);
                 break;
             case R.id.wifiId:
-                i = new Intent(this, Wifi_Activity.class);
+                i = new Intent(getApplicationContext(), Wifi_Activity.class);
                 startActivity(i);
                 break;
             case R.id.fab:
@@ -76,9 +76,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         "Cliquei no FAB",
                         Toast.LENGTH_SHORT).show();
                 break;
-            default:
-                break;
-
         }
     }
 }
